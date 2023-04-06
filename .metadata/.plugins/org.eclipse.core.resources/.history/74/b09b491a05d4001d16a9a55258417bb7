@@ -1,0 +1,53 @@
+<!-- Create an index.jsp file... -->
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<!-- ...with a table... -->
+	
+	<div>
+		<h1>Burger Tracker</h1>
+		<table>
+			<thead>
+				<tr>
+					<th>Burger Name</th>
+					<th>Restaurant Name</th>
+					<th>Rating (out of 5)</th>
+				</tr>
+			</thead>
+			<tbody>
+				
+			</tbody>
+		</table>
+	</div>
+	<div>
+		<h2>Add a Burger: </h2>
+		<form>
+			<div>
+				<label for="name">Burger Name</label>
+				<input type="text" name="name">
+			</div>
+			<div>
+				<label for="restaurant">Restaurant Name</label>
+				<input type="text" name="restaurant">
+			</div>
+			<div>
+				<label for="rating">Rating</label>
+				<input type="number" name="rating">
+			</div>
+			<div>
+				<label for="notes">Notes</label>
+				<textarea rows="4" cols="50" name="notes"></textarea>
+			</div>
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>

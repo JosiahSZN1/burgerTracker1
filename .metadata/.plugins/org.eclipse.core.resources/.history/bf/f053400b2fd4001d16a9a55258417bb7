@@ -1,0 +1,25 @@
+package com.codingdojo.burgertracker1.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+
+import com.codingdojo.burgertracker1.models.Burger;
+
+@Controller
+public class BurgersController {
+	
+//	Create route in controller to render index.jsp
+	
+	@GetMapping("/")
+	
+//	Add @ModelAttribute annotation and associated syntax to render route, to bind an empty Burger object to JSP form to capture user input
+	
+	public String index(
+			Model model,
+			@ModelAttribute("burger") Burger burger) {
+		return "index.jsp";
+	}
+
+}

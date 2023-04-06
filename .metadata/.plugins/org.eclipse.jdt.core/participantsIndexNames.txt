@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+/Users/levijosiahmariano/Desktop/SoftwareDevelopment/CodingDojo/java/spring/mvc/assignments/burgerTracker1/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/557995937.index
+/burgertracker1/src/main/java

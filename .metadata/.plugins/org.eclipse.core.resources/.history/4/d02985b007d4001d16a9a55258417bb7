@@ -1,0 +1,13 @@
+package com.codingdojo.burgertracker1.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class BurgersController {
+	@GetMapping("/")
+	public String index() {
+		return "index.jsp";
+	}
+
+}

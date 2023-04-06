@@ -1,0 +1,68 @@
+package com.codingdojo.burgertracker1.controllers;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.stereotype.Service;
+
+import com.codingdojo.burgertracker1.models.Burger;
+import com.codingdojo.burgertracker1.repositories.BurgerRepository;
+
+@Service
+public class BurgerService {
+	
+	private final BurgerRepository burgerRepository;
+	
+	public BurgerService(BurgerRepository burgerRepository) {
+		this.burgerRepository = burgerRepository;
+	}
+
+	public List<Burger> allBurgers() {
+		return burgerRepository.findAll();
+	}
+
+	public Burger createBurger (Burger burger) {
+		return burgerRepository.save(burger);
+	}
+
+	public <S extends Burger> Iterable<S> saveAll(Iterable<S> entities) {
+		return burgerRepository.saveAll(entities);
+	}
+
+	public Optional<Burger> findById(Long id) {
+		return burgerRepository.findById(id);
+	}
+
+	public boolean existsById(Long id) {
+		return burgerRepository.existsById(id);
+	}
+
+	public Iterable<Burger> findAllById(Iterable<Long> ids) {
+		return burgerRepository.findAllById(ids);
+	}
+
+	public long count() {
+		return burgerRepository.count();
+	}
+
+	public void deleteById(Long id) {
+		burgerRepository.deleteById(id);
+	}
+
+	public void delete(Burger entity) {
+		burgerRepository.delete(entity);
+	}
+
+	public void deleteAllById(Iterable<? extends Long> ids) {
+		burgerRepository.deleteAllById(ids);
+	}
+
+	public void deleteAll(Iterable<? extends Burger> entities) {
+		burgerRepository.deleteAll(entities);
+	}
+
+	public void deleteAll() {
+		burgerRepository.deleteAll();
+	}
+
+}

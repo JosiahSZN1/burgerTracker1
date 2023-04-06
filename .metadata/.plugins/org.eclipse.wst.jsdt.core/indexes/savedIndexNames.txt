@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+/Users/levijosiahmariano/Desktop/SoftwareDevelopment/CodingDojo/java/spring/mvc/assignments/burgerTracker1/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+969420749.index
+557995937.index
+458311866.index
+2084173521.index
+2963091411.index
+81878554.index
+1244493923.index
